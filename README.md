@@ -17,10 +17,10 @@ A PyQt6 desktop application that fetches YouTube channel view‐count data (via 
 - [How It Works](#how-it-works)  
 - [Exporting to Excel](#exporting-to-excel)  
 - [Logging](#logging)  
-- [Contributing](#contributing)  
-- [License](#license)  
 
 ---
+
+![Alt text](screen.jpg)
 
 ## Features
 
