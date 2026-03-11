@@ -20,7 +20,7 @@ A PyQt6 desktop application that fetches YouTube channel view‐count data (via 
 
 ---
 
-![Alt text](screen.jpg)
+![Alt text](screenshot.jpg)
 
 ## Features
 
