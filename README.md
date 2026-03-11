@@ -1,108 +1,93 @@
-<div align="center">
+# YouTube View Stats Dashboard
 
-# YouTube View Statistics Dashboard
+> PyQt6 desktop dashboard for YouTube channel analytics with Google API integration and Excel export.
 
-| Developer & Author | Year          |
-|--------------------|----------------|
-| Naadir D           | 2024           |
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)](https://www.python.org/)
+[![PyQt6](https://img.shields.io/badge/PyQt6-modern_UI-green?style=flat-square)](https://www.riverbankcomputing.com/software/pyqt/)
+[![YouTube_API](https://img.shields.io/badge/YouTube-Data_API-red?style=flat-square&logo=youtube)](https://developers.google.com/youtube)
 
-![Alt text](screenshot.jpg)
-</div>
+---
 
 ## Overview
 
-A PyQt6 desktop application that fetches YouTube channel view‐count data (via the YouTube Data API v3), visualizes trends, and allows exporting to Excel.
+The YouTube View Stats Dashboard is a powerful desktop application built with PyQt6 that provides detailed analytics and insights into YouTube channel performance. Leveraging the YouTube Data API, this application allows content creators and analysts to track view statistics, monitor channel growth, and export data for further analysis.
 
-
-## Table of Contents
-
-- [Features](#features)  
-- [Requirements](#requirements)  
-- [Obtaining a YouTube API Key](#obtaining-a-youtube-api-key)  
-- [Configuration](#configuration)  
-- [Usage](#usage)  
-- [How It Works](#how-it-works)  
-- [Exporting to Excel](#exporting-to-excel)  
-- [Logging](#logging)  
+The dashboard features multi-threaded API calls for responsive performance, advanced chart visualizations, and comprehensive Excel export capabilities. Users can specify YouTube channel URLs in multiple formats (@handle, /c/, /channel/, or /user/), and the application automatically resolves them to channel IDs, fetches real-time statistics, and presents them in an intuitive interface.
 
 ---
 
 ## Features
 
-- Enter any YouTube channel URL (standard, custom, or handle)  
-- Choose number of past videos (50, 100, …, up to 1000, or “All”)  
-- Interactive line chart of individual view counts plus a moving average  
-- Zoom, pan, and reset via mouse interactions  
-- Export full dataset and chart into a styled Excel workbook  
+- Query YouTube channels by URL (supports @handle, custom URLs, and channel IDs)
+- Fetch real-time view statistics from YouTube Data API
+- Multi-threaded API calls for responsive UI
+- Interactive line charts with PyQt Charts
+- Comprehensive Excel export with formatted charts
+- Date filtering capabilities
+- Professional dark-themed UI
+- Logging for debugging and monitoring
+- URL validation and channel resolution
 
-## Requirements
+---
 
-- Python 3.8+  
-- A valid YouTube Data API v3 key  
-- Packages (install via `pip install -r requirements.txt`):  
-  - `google-api-python-client`  
-  - `pandas`  
-  - `numpy`  
-  - `PyQt6`  
-  - `openpyxl`  
+## Screenshots
 
+> Drop screenshots into `screens/` and reference them below.
 
-## Obtaining a YouTube API Key
+![YouTube Dashboard](screenshot.jpg)
 
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/).  
-2. Create or select an existing project.  
-3. In “APIs & Services” → “Library”, enable the **YouTube Data API v3**.  
-4. In “APIs & Services” → “Credentials”, click **Create credentials** → **API key**.  
-5. Copy the generated key.
+---
 
-## Configuration
+## Getting Started
 
-1. Create a file named `api.txt` in the project root.  
-2. Paste your API key into `api.txt` (no extra whitespace).  
-3. Save and close.
+### Prerequisites
 
-## Usage
+- Python 3.8 or higher
+- PyQt6
+- Google API Client
+- Pandas
+- OpenPyXL
+- YouTube Data API key
 
-1. **Run the application**  
-   ```bash
-   python main.py
-   ```
-2. **In the GUI**  
-   - Paste your target channel URL (e.g. `https://www.youtube.com/@YourChannel`).  
-   - Select how many past videos to analyze.  
-   - Click **Analyze** to fetch data and render the chart.  
-   - When the chart appears, you can zoom/pan with your mouse.  
-   - Double‑click the chart to reset zoom.  
-   - Once data is loaded, click **Export to Excel** to save an `.xlsx` file.
+### Installation
 
-## How It Works
+```bash
+git clone https://github.com/Naadir-Dev-Portfolio/Desktop-youtube-view-stats-dashboard.git
+cd Desktop-youtube-view-stats-dashboard
+pip install -r requirements.txt
+```
 
-1. **API Client Initialization**  
-   - Reads your key from `api.txt` and builds the YouTube API client.  
-2. **URL Parsing**  
-   - Detects `/channel/` IDs directly, resolves custom URLs (`/c/` or `/user/`), and handles handle URLs (`/@`).  
-3. **Data Retrieval**  
-   - Fetches the “uploads” playlist ID, then pages through playlist items to collect video IDs (all or last _n_).  
-   - Batches calls to `videos.list` for view counts, titles, and publish dates.  
-4. **Data Processing**  
-   - Loads data into a `pandas.DataFrame`.  
-   - Converts ISO timestamps to Python `datetime`, sorts, and computes a rolling mean.  
-5. **Visualization**  
-   - Uses **PyQt6.QtCharts** to plot view counts and moving average.  
-   - Adds interactive tooltips, zoom/pan, and a drop shadow for polish.  
-6. **Export**  
-   - Converts the DataFrame to Excel via **openpyxl**, styles headers, and embeds a line chart in the sheet.
+### Configuration
 
-## Exporting to Excel
+1. Obtain a YouTube Data API key from the Google Cloud Console
+2. Create an `api.txt` file in the project directory
+3. Paste your API key into the file (keep it private!)
 
-- Creates a workbook named:  
-  ```
-  <ChannelTitle>-<nVideos>-YYYYMMDD.xlsx
-  ```
-- Includes all raw statistics and an embedded chart.  
-- Headers are bolded for readability.
+```bash
+echo “YOUR_YOUTUBE_API_KEY” > api.txt
+```
 
-## Logging
+### Run
 
-- All debug/info/error messages are written to `youtube_dashboard.log` in the app folder.  
-- Useful for troubleshooting API errors, SSL retries, or unexpected failures.
+```bash
+python main.py
+```
+
+---
+
+## Tech Stack
+
+- PyQt6 — Modern desktop UI framework
+- YouTube Data API — Channel and view statistics
+- PyQt Charts — Interactive data visualization
+- Pandas — Data manipulation
+- OpenPyXL — Excel report generation
+- Python — Core application logic
+
+---
+
+## Related Projects
+
+- [Desktop-Mortgage-overpayment-tracker](https://github.com/Naadir-Dev-Portfolio/Desktop-Mortgage-overpayment-tracker)
+- [Desktop-PyQt6-finance-dashboard](https://github.com/Naadir-Dev-Portfolio/Desktop-PyQt6-finance-dashboard)
+- [Desktop-PyQt6-health-dashboard](https://github.com/Naadir-Dev-Portfolio/Desktop-PyQt6-health-dashboard)
