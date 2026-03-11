@@ -119,14 +119,3 @@ A PyQt6 desktop application that fetches YouTube channel view‐count data (via 
 
 - All debug/info/error messages are written to `youtube_dashboard.log` in the app folder.  
 - Useful for troubleshooting API errors, SSL retries, or unexpected failures.
-
-## Contributing
-
-1. Fork this repository.  
-2. Create a feature branch: `git checkout -b feature/YourFeature`.  
-3. Commit your changes and push: `git push origin feature/YourFeature`.  
-4. Open a Pull Request—your improvements are welcome!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to copy, modify, and distribute.
