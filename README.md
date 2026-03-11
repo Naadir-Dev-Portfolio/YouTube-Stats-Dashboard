@@ -1,11 +1,10 @@
-# Desktop-youtube-view-stats-dashboard
-| Author     | Year |
-|------------|------|
-| Naadir D   | 2024 |
-
 # YouTube View Statistics Dashboard
 
 A PyQt6 desktop application that fetches YouTube channel view‐count data (via the YouTube Data API v3), visualizes trends, and allows exporting to Excel.
+
+| Author     | Year |
+|------------|------|
+| Naadir D   | 2024 |
 
 ## Table of Contents
 
