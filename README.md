@@ -1,12 +1,15 @@
 # YouTube View Statistics Dashboard
-<div style="text-align: center;">
-  
-  | Author     | Year |
-  |------------|------|
-  | Naadir D   | 2024 |
-  
-  ![Alt text](screenshot.jpg)
+<div align="center">
+
+
+| Developer & Author | Year          |
+|--------------------|----------------|
+| Naadir D           | 2024           |
+
+![Alt text](screens/screen.JPG)
 </div>
+
+## Overview
 
 A PyQt6 desktop application that fetches YouTube channel view‐count data (via the YouTube Data API v3), visualizes trends, and allows exporting to Excel.
 
