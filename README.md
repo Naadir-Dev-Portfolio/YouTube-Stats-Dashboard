@@ -1,10 +1,16 @@
 # YouTube View Statistics Dashboard
+<div style="text-align: center;">
+
 ![Alt text](screenshot.jpg)
-A PyQt6 desktop application that fetches YouTube channel view‐count data (via the YouTube Data API v3), visualizes trends, and allows exporting to Excel.
 
 | Author     | Year |
 |------------|------|
 | Naadir D   | 2024 |
+
+</div>
+
+A PyQt6 desktop application that fetches YouTube channel view‐count data (via the YouTube Data API v3), visualizes trends, and allows exporting to Excel.
+
 
 ## Table of Contents
 
@@ -39,24 +45,6 @@ A PyQt6 desktop application that fetches YouTube channel view‐count data (via 
   - `PyQt6`  
   - `openpyxl`  
 
-## Installation
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/YourUsername/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. **Create a virtual environment (optional but recommended)**  
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate   # on Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**  
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Obtaining a YouTube API Key
 
