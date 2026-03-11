@@ -6,7 +6,7 @@
 |--------------------|----------------|
 | Naadir D           | 2024           |
 
-![Alt text](screens/screen.JPG)
+![Alt text](screenshot.JPG)
 </div>
 
 ## Overview
