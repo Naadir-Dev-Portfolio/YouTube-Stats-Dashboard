@@ -18,7 +18,6 @@ A PyQt6 desktop application that fetches YouTube channel view‐count data (via 
 
 - [Features](#features)  
 - [Requirements](#requirements)  
-- [Installation](#installation)  
 - [Obtaining a YouTube API Key](#obtaining-a-youtube-api-key)  
 - [Configuration](#configuration)  
 - [Usage](#usage)  
