@@ -1,0 +1,15 @@
+{
+  "section": "python",
+  "category": "desktop",
+  "n": 2,
+  "title": "YouTube Stats Dashboard",
+  "img": "yt_viewCountScreen.webp",
+  "desc": "Cross-platform PyQt6 dashboard integrating the YouTube Data API to visualise channel growth and engagement trends.",
+  "code": "https://github.com/Naadir-Dev-Portfolio/YouTube-Stats-Dashboard/blob/main/main.py",
+  "details": "https://github.com/Naadir-Dev-Portfolio/YouTube-Stats-Dashboard/blob/main/README.md",
+  "tags": [
+    "python",
+    "pyqt",
+    "api"
+  ]
+}
