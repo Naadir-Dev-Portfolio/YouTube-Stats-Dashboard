@@ -129,9 +129,19 @@ dmypy.json
 *.swo
 *~
 
+# Secrets
+*.key
+*.pem
+secrets.json
+config_local.py
+
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Logs
+logs/
 
 # Application specific
 *.xlsx

@@ -4,12 +4,8 @@
   "n": 2,
   "title": "YouTube Stats Dashboard",
   "img": "yt_viewCountScreen.webp",
-  "desc": "Cross-platform PyQt6 dashboard integrating the YouTube Data API to visualise channel growth and engagement trends.",
+  "desc": "Local channel intelligence tool that fetches full view-count history from the YouTube Data API — giving creators a persistent, exportable performance record that YouTube's own analytics won't provide.",
   "code": "https://github.com/Naadir-Dev-Portfolio/YouTube-Stats-Dashboard/blob/main/main.py",
   "details": "https://github.com/Naadir-Dev-Portfolio/YouTube-Stats-Dashboard/blob/main/README.md",
-  "tags": [
-    "python",
-    "pyqt",
-    "api"
-  ]
+  "tags": ["python", "pyqt", "api"]
 }
