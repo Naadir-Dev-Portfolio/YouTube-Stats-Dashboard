@@ -1,6 +1,7 @@
 <div align="center">
 
 <img src="./repo-card.png" alt="YouTube Stats Dashboard project card" width="72%" />
+<br />
 
 <p><strong>Multi-channel YouTube analytics desktop app with local snapshots, sortable video insights, growth charts, and quota-aware fetching.</strong></p>
 
@@ -153,3 +154,4 @@ YouTube-Stats-Dashboard/
 ## Contact
 
 Questions, feedback, or collaboration: `naadir.dev.mail@gmail.com`
+
