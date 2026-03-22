@@ -148,3 +148,8 @@ logs/
 *.csv
 api.txt
 youtube_dashboard.log
+api_config.json
+*.db
+*.db-shm
+*.db-wal
+data/
