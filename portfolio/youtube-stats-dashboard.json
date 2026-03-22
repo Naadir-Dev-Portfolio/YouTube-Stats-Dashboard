@@ -4,7 +4,7 @@
   "n": 2,
   "title": "YouTube Stats Dashboard",
   "img": "screenshot.png",
-  "desc": "Local channel intelligence tool that fetches full view-count history from the YouTube Data API — giving creators a persistent, exportable performance record that YouTube's own analytics won't provide.",
+  "desc": "Local channel intelligence tool that fetches full view count history from the YouTube Data API, giving creators a persistent, exportable performance record that YouTube's own analytics won't provide.",
   "code": "https://github.com/Naadir-Dev-Portfolio/YouTube-Stats-Dashboard/blob/main/main.py",
   "details": "https://github.com/Naadir-Dev-Portfolio/YouTube-Stats-Dashboard/blob/main/README.md",
   "tags": ["python", "pyqt", "api"]
