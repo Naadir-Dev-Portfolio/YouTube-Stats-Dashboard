@@ -3,7 +3,7 @@
 <img src="./repo-card.png" alt="YouTube Stats Dashboard project card" width="72%" />
 <br /><br />
 
-<p><strong>Multi-channel YouTube analytics desktop app with local snapshots, sortable video insights, growth charts, and quota-aware fetching.</strong></p>
+<p><strong>Multi channel YouTube analytics desktop app with local snapshots, sortable video insights, growth charts, and quota aware fetching.</strong></p>
 
 <p>Built for creators and analysts who want a proper local YouTube performance dashboard.</p>
 
@@ -23,15 +23,15 @@
 
 ## Overview
 
-YouTube Analytics is powerful, but it is browser-bound, time-limited, and not built for long-term local tracking across multiple channels. This project gives you a proper desktop dashboard that connects directly to the YouTube Data API v3, stores historical snapshots in SQLite, and makes channel performance easier to inspect over time.
+YouTube Analytics is powerful, but it is browser bound, time limited, and not built for long-term local tracking across multiple channels. This project gives you a proper desktop dashboard that connects directly to the YouTube Data API v3, stores historical snapshots in SQLite, and makes channel performance easier to inspect over time.
 
-Use it to track subscriber growth, total views, publishing activity, top-performing videos, and engagement trends without relying on a third-party web dashboard.
+Use it to track subscriber growth, total views, publishing activity, top performing videos, and engagement trends without relying on a third party web dashboard.
 
 ## What Problem It Solves
 
 - See whether a channel is growing, plateauing, or losing momentum over time.
 - Spot whether a topic or content direction is gaining relevance or fading in interest.
-- Compare performance across channels and videos instead of relying on one-off snapshots.
+- Compare performance across channels and videos instead of relying on one off snapshots.
 - Turn raw YouTube metrics into a clearer view of audience traction, engagement, and trend direction.
 
 ### At a glance
@@ -44,20 +44,20 @@ Use it to track subscriber growth, total views, publishing activity, top-perform
 
 - Track multiple YouTube channels from one desktop app.
 - Save persistent local snapshots for historical comparison.
-- Explore a sortable, filterable video table with per-video metrics.
+- Explore a sortable, filterable video table with per video metrics.
 - Visualize growth and engagement with charts and hover tooltips.
-- Keep the UI responsive with `QThread` worker-based fetching.
+- Keep the UI responsive with `QThread` worker based fetching.
 - Monitor API usage with a built-in daily quota guard.
 
 ### Core capabilities
 
 | Area | What it gives you |
 |---|---|
-| **Dashboard** | Channel sidebar, stat cards, date presets, growth charts, engagement breakdown, and top-video visibility |
+| **Dashboard** | Channel sidebar, stat cards, date presets, growth charts, engagement breakdown, and top video visibility |
 | **Videos tab** | Sortable and filterable table for title, publish date, views, likes, comments, engagement rate, and duration |
 | **Settings tab** | API key management, quota display, and local data directory information |
-| **Data layer** | SQLite-backed storage for channels, snapshots, and videos |
-| **Fetching model** | Non-blocking worker threads with live status updates |
+| **Data layer** | SQLite backed storage for channels, snapshots, and videos |
+| **Fetching model** | Non blocking worker threads with live status updates |
 
 ## Screenshots
 
